@@ -9,9 +9,9 @@
 from setuptools import setup, find_packages
 #from ama.core.version import get_version
 
-VERSION = "v0.0.1" 
+VERSION = "v0.0.1"
 
-f = open('README', 'r')
+f = open('README.md', 'r')
 LONG_DESCRIPTION = f.read()
 f.close()
 
@@ -27,5 +27,13 @@ setup(
     url='https://github.com/fpolit/cupp',
     license='GPL3',
     packages=find_packages(),
+    package_data = {
+        'cupp': ['cupp.cfg'],
+    },
     include_package_data=True,
+    entry_points={
+        'console_scripts':[
+            'cupp = cupp.cupp:main'
+        ],
+    }
 )
