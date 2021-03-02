@@ -4,7 +4,7 @@ clean:
 	find . -name '*.py[co]' -delete
 
 virtualenv:
-	virtualenv --prompt '(pack)' env
+	virtualenv --prompt '(cupp)' env
 	env/bin/pip3 install -r requirements-dev.txt
 	env/bin/python3 setup.py develop
 	@echo
