@@ -60,7 +60,7 @@ Quick start
 
 ## Example (Fast forwarded)
 
-![cupp-example](screenshots/cupp-example.gif)
+![cupp-example](docs/screenshots/cupp-example.gif)
 
 ## License
 
